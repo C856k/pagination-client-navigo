@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap Table Example</title>
+  <style>
+    .black-row {
+      background-color: black;
+      color: white;
+    }
+
+    .grey-row {
+      background-color: rgb(57, 57, 57);
+    }
+
+    .green-row {
+      background-color: green;
+      color: white;
+    }
+
+    .orange-row {
+      background-color: orange;
+    }
+
+    .red-row {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <table class="table table-striped">
+      <thead>
+        <tr class="black-row">
+          <th>Row 1(col-3)</th>
+          <th>Row 1(col-3)</th>
+          <th>Row 1(col-3)</th>
+          <th>Row 1(col-3)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="grey-row">
+          <td>Row 2(col-sm-3)</td>
+          <td>Row 2(col-sm-3)</td>
+          <td>Row 2(col-sm-3)</td>
+          <td>Row 2(col-sm-3)</td>
+        </tr>
+        <tr class="green-row">
+          <td>Row-3(col-md-3)</td>
+          <td>Row-3(col-md-3)</td>
+          <td>Row-3(col-md-3)</td>
+          <td>Row-3(col-md-3)</td>
+        </tr>
+        <tr class="orange-row">
+          <td>Row-4(col-ig-3)</td>
+          <td>Row-4(col-ig-3)</td>
+          <td>Row-4(col-ig-3)</td>
+          <td>Row-4(col-ig-3)</td>
+        </tr>
+        <tr class="red-row">
+          <td colspan="3"> <!-- Use colspan to span across all columns -->
+            <!-- Nested Table -->
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Row-6(col-md-3)(inner column)</th>
+                </tr>
+                <tr>
+                  <th>Row-6(col-md-3)(inner column)</th>
+                </tr>
+                <tr>
+                  <th>Row-6(col-md-3)(inner column)</th>
+                </tr>
+                <tr>
+                  <th>Row-6(col-md-3)(inner column)</th>
+                </tr>
+              </thead>
+              </tbody>
+            </table>
+          </td>
+          <td>Row-6(col-ig-3)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
